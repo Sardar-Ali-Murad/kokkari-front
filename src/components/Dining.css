@@ -1,0 +1,72 @@
+.diningHeaders{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.diningMain{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.diningFlex{
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.diningFlexHead{
+    margin-top: 60px;
+}
+
+.diningFlexContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.diningFlexImage{
+    flex: 1;
+}
+
+.diningFlexContent{
+    flex: 1;
+}
+
+.diningFlexImage img{
+    width: 100%;
+}
+
+.diningCard{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 120px;
+    border: 1px solid rgb(156, 75, 75);
+    padding: 10px 20px;
+    border-left: 8px solid brown;
+}
+
+.diningFlexLast{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.dingColumnFlex{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+
+.diningIcon{
+    font-size: 40px;
+}
+
+@media screen and (max-width:900px) {
+    .diningFlex{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,25 @@
+.headerImage {
+  display: flex;
+  justify-content: center;
+}
+
+.headerMain {
+  padding: 30px 0px;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 50px;
+}
+
+.headerLinks P {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.headerLinks a {
+  color: black;
+}

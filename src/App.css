@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito:wght@300&family=Open+Sans:wght@500&family=Poppins:wght@200&family=Roboto&family=Source+Serif+Pro&display=swap");
+.appMain {
+  background-color: rgba(221, 191, 155, 0.85);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+.appMain {
+  overflow-x: hidden;
+}
