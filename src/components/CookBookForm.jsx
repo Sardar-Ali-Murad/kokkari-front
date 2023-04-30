@@ -3,8 +3,11 @@ import "./CookBookForm.css";
 import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
 import { BsFillCreditCardFill } from "react-icons/bs";
+import { gift } from "./data";
+import { countries } from "./data";
 
 const CookBookForm = () => {
+  let [shippingInfo, setShipingInfo] = React.useState(false);
   const cookbooks = [
     {
       value: "1",
@@ -36,7 +39,7 @@ const CookBookForm = () => {
         <TextField
           id="outlined-select-currency"
           select
-          label="Select"
+          label="cookbook"
           defaultValue="EUR"
           helperText="Please select no. of cookBooks"
         >
@@ -64,11 +67,11 @@ const CookBookForm = () => {
           <TextField
             id="outlined-select-currency"
             select
-            label="Select"
+            label="gift"
             defaultValue="EUR"
             helperText="Please select no. of cookBooks"
           >
-            {cookbooks.map((option) => (
+            {gift.map((option) => (
               <MenuItem key={option.value} value={option.value}>
                 {option.label}
               </MenuItem>
@@ -80,11 +83,11 @@ const CookBookForm = () => {
           <TextField
             id="outlined-select-currency"
             select
-            label="Select"
+            label="gift"
             defaultValue="EUR"
             helperText="Please select no. of cookBooks"
           >
-            {cookbooks.map((option) => (
+            {gift.map((option) => (
               <MenuItem key={option.value} value={option.value}>
                 {option.label}
               </MenuItem>
@@ -170,19 +173,39 @@ const CookBookForm = () => {
             <input placeholder="Zip Code" className="cookBookTextFields" />
           </div>
           <div className="cookBookTextField">
-            <p>State / Province / Region</p>
-            <input placeholder="State" className="cookBookTextFields" />
+            <p>Country</p>
+            <select className="cookBookTextFields">
+              {countries?.map((country) => {
+                return (
+                  <option>
+                    <div>
+                      <img
+                        loading="lazy"
+                        width="20"
+                        src={`https://flagcdn.com/w20/${country.code.toLowerCase()}.png`}
+                        srcSet={`https://flagcdn.com/w40/${country.code.toLowerCase()}.png 2x`}
+                        alt=""
+                      />
+                      {country.label} ({country.code}) +{country.phone}
+                    </div>
+                  </option>
+                );
+              })}
+            </select>
           </div>
         </div>
 
         <div>
           <div className="cookBookTextField">
             <h5>Your Phone number</h5>
-            <input placeholder="Zip Code" className="cookBookTextFields" />
+            <input placeholder="Phone" className="cookBookTextFields" />
           </div>
           <div className="cookBookTextField">
             <h5>Your Email</h5>
-            <input placeholder="Zip Code" className="cookBookTextFields" />
+            <input
+              placeholder="email@gmail.com"
+              className="cookBookTextFields"
+            />
           </div>
         </div>
       </div>
@@ -215,45 +238,69 @@ const CookBookForm = () => {
             </p>
           </div>
           <div className="shippingInfoCheck">
-            <input type="checkBox" />
+            <input
+              type="checkBox"
+              value={shippingInfo}
+              onChange={(e) => setShipingInfo(e.target.checked)}
+            />
             <p>Same As Billing Address</p>
           </div>
         </div>
 
         {/*  */}
-        <div className="billingBoxes">
-          <h5>Billing Address</h5>
-          <div className="cookBookTextField">
-            <p>Street Address</p>
-            <input
-              placeholder="Street Address"
-              className="cookBookTextFields"
-            />
-          </div>
-          <div className="cookBookTextField">
-            <p>Address Line 2</p>
-            <input
-              placeholder="Address Line 2"
-              className="cookBookTextFields"
-            />
-          </div>
-          <div className="cookBookFormTextFieldFlex">
+        {!shippingInfo && (
+          <div className="billingBoxes">
+            <h5>Billing Address</h5>
             <div className="cookBookTextField">
-              <p>City</p>
-              <input placeholder="City" className="cookBookTextFields" />
+              <p>Street Address</p>
+              <input
+                placeholder="Street Address"
+                className="cookBookTextFields"
+              />
             </div>
             <div className="cookBookTextField">
-              <p>State / Province / Region</p>
-              <input placeholder="Country" className="cookBookTextFields" />
+              <p>Address Line 2</p>
+              <input
+                placeholder="Address Line 2"
+                className="cookBookTextFields"
+              />
+            </div>
+            <div className="cookBookFormTextFieldFlex">
+              <div className="cookBookTextField">
+                <p>City</p>
+                <input placeholder="City" className="cookBookTextFields" />
+              </div>
+              <div className="cookBookTextField">
+                <p>State / Province / Region</p>
+                {/* <input placeholder="Country" className="cookBookTextFields" /> */}
+                <select className="cookBookTextFields">
+                  {countries?.map((country) => {
+                    return (
+                      <option>
+                        <div>
+                          <img
+                            loading="lazy"
+                            width="20"
+                            src={`https://flagcdn.com/w20/${country.code.toLowerCase()}.png`}
+                            srcSet={`https://flagcdn.com/w40/${country.code.toLowerCase()}.png 2x`}
+                            alt=""
+                          />
+                          {country.label} ({country.code}) +{country.phone}
+                        </div>
+                      </option>
+                    );
+                  })}
+                </select>
+              </div>
+            </div>
+            <div className="cookBookFormTextFieldFlex">
+              <div className="cookBookTextField">
+                <p>ZIP / Postal Code</p>
+                <input placeholder="Zip Code" className="cookBookTextFields" />
+              </div>
             </div>
           </div>
-          <div className="cookBookFormTextFieldFlex">
-            <div className="cookBookTextField">
-              <p>ZIP / Postal Code</p>
-              <input placeholder="Zip Code" className="cookBookTextFields" />
-            </div>
-          </div>
-        </div>
+        )}
       </div>
       {/*  */}
 

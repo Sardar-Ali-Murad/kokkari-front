@@ -64,7 +64,9 @@ const About = () => {
             <p>San Francisco, CA 94111</p>
           </div>
           <div>
-            <p>p:<span className="activeLink"> 415.981.0983</span></p>
+            <p>
+              p:<span className="activeLink"> 415.981.0983</span>
+            </p>
             <Link className="activeLink" to="/Reservations">
               <p>reservations & hours</p>
             </Link>
@@ -81,7 +83,9 @@ const About = () => {
                   <h5>{chip?.role}</h5>
                   <div className="chipNames">
                     {chip?.names?.map((name) => (
-                      <p className={name?.email && "activeLink"}>{name?.name}</p>
+                      <p className={name?.email && "activeLink"}>
+                        {name?.name}
+                      </p>
                     ))}
                   </div>
                 </div>

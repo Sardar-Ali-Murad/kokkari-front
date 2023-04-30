@@ -1,20 +1,28 @@
 import React from "react";
 import "./Footer.css";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
+// or
 
-const Footer = ({setActive}) => {
+const Footer = ({ setActive }) => {
   return (
     <div>
+      <ScrollToTop smooth />
       <div className="footerMain">
         {/* The First Links  */}
         <div className="footerLinks">
           <Link to="Press">
-            <p className="activeLink" onClick={()=>setActive("")}>PRESS ROOM</p>
+            <p className="activeLink" onClick={() => setActive("")}>
+              PRESS ROOM
+            </p>
           </Link>
           <Link to="CookBook">
-          <p className="footerLinkAlignCenter activeLink" onClick={()=>setActive("")}>
-            GIFT CERTIFICATES <br /> & COOKBOOK{" "}
-          </p>
+            <p
+              className="footerLinkAlignCenter activeLink"
+              onClick={() => setActive("")}
+            >
+              GIFT CERTIFICATES <br /> & COOKBOOK{" "}
+            </p>
           </Link>
           <p className="activeLink">CONTACT</p>
         </div>
@@ -25,25 +33,35 @@ const Footer = ({setActive}) => {
           <div className="footerSubLinks">
             <div className="footerLinks1">
               <Link to="/">
-               <p className="activeLink" onClick={()=>setActive("")}>KOKKARI </p>
+                <p className="activeLink" onClick={() => setActive("")}>
+                  KOKKARI{" "}
+                </p>
               </Link>
               <p> | </p>
               <Link to="/">
-                <p className="activeLink" onClick={()=>setActive("")}>EVVIA</p>
+                <p className="activeLink" onClick={() => setActive("")}>
+                  EVVIA
+                </p>
               </Link>
             </div>
             <div className="footerSubLinksFlex">
               <p> KOKKARI ESTIATORIO</p>
               <p>200 Jackson Street (at Front St.)</p>
               <p>San Francisco, CA 94111</p>
-              <p>p: <span className="activeLink">415.981.0983</span></p>
+              <p>
+                p: <span className="activeLink">415.981.0983</span>
+              </p>
             </div>
             <div className="footerSubLinksFlex">
               <Link to="/Reservations">
-                <p  className="activeLink" onClick={()=>setActive("")} >reservations & hours</p>
+                <p className="activeLink" onClick={() => setActive("")}>
+                  reservations & hours
+                </p>
               </Link>
               <Link to="/Reservations">
-                <p  className="activeLink" onClick={()=>setActive("")} >directions</p>
+                <p className="activeLink" onClick={() => setActive("")}>
+                  directions
+                </p>
               </Link>
             </div>
           </div>

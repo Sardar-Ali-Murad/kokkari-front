@@ -45,13 +45,13 @@ const Dining = () => {
         <div className="dingColumnFlex">
           <div className="diningFlexLast">
             <p>
-              <BsPhone className="diningIcon"/>
+              <BsPhone className="diningIcon" />
             </p>
             <p>415.981.0983</p>
           </div>
           <div className="diningFlexLast">
             <p>
-              <AiOutlineMail  className="diningIcon"/>
+              <AiOutlineMail className="diningIcon" />
             </p>
             <p>email@gmail.com</p>
           </div>

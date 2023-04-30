@@ -24,42 +24,38 @@
   color: black;
 }
 
-.smallScreenHeader{
+.smallScreenHeader {
   display: none;
 }
 
-
-@media screen and (max-width:900px) {
-  .BigScreenHeader{
+@media screen and (max-width: 900px) {
+  .BigScreenHeader {
     display: none;
   }
 
-  .smallScreenHeader{
+  .smallScreenHeader {
     display: block;
   }
-
 }
 
-
-.headerLinksWrapper{
-  background-color:  	#8B4513;
+.headerLinksWrapper {
+  background-color: #8b4513;
   display: flex;
   justify-content: center;
   color: #f1f1f1;
   height: 110px;
 }
 
-.headerLinksWrapper p{
+.headerLinksWrapper p {
   color: #f1f1f1;
 }
 
-
 /* The active Link */
-.activeLink{
-  color: #8B4513;
+.activeLink {
+  color: #8b4513;
   cursor: pointer;
 }
 
-.activeNavLink{
-  color: #D2691E;
+.activeNavLink {
+  color: #d2691e;
 }

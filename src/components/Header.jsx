@@ -9,7 +9,7 @@ import DinnerList from "../assets/dinner.pdf";
 import WineList from "../assets/wine.pdf";
 import SmallScreenNavbar from "./SmalScreenNavbar";
 
-const Header = ({active,setActive}) => {
+const Header = ({ active, setActive }) => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {

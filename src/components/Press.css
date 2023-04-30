@@ -1,49 +1,45 @@
-.pressMian{
-    width: 95%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    padding: 100px 0px;
+.pressMian {
+  width: 95%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 100px 0px;
 }
 
-
-.pressCard img{
-    width: 100%;
-    height: 70%;
+.pressCard img {
+  width: 100%;
+  height: 70%;
 }
 
-
-
-.pressCard{
-    min-height: 100px;
+.pressCard {
+  min-height: 100px;
 }
 
-
-
-.pressCard{
-    border: 2px solid brown;
-    object-fit: cover;
-    height: fit-content;
-    box-shadow: 5px 5px 5px rgb(68 68 68 / 0.6);
-    border-radius: 20px 20px 0px 0px;
-    /* box-shadow: 2px 2px 2px aliceblue; */
-    /* box-shadow: 3px 3px 5px 6px #ccc; */
+.pressCard {
+  border: 2px solid brown;
+  object-fit: cover;
+  height: fit-content;
+  box-shadow: 5px 5px 5px rgb(68 68 68 / 0.6);
+  border-radius: 20px 20px 0px 0px;
+  cursor: pointer;
+  /* box-shadow: 2px 2px 2px aliceblue; */
+  /* box-shadow: 3px 3px 5px 6px #ccc; */
 }
 
-.pressCard img{
-    border-radius: 20px 20px 0px 0px;
+.pressCard img {
+  border-radius: 20px 20px 0px 0px;
 }
 
-.pressContent img{
-    height: 40%;
+.pressContent img {
+  height: 40%;
 }
 
-.pressContent{
-    padding: 20px 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.pressContent {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.pressCard{
-    margin: 10px;
+.pressCard {
+  margin: 10px;
 }

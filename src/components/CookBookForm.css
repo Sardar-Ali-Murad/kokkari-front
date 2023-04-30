@@ -224,23 +224,23 @@
   gap: 10px;
 }
 
-.cardHolderNameTextField{
-    width: 92%;
-    height: 30px;
-    outline: none;
-    border-radius: 10px;
-    padding: 8px 12px;
+.cardHolderNameTextField {
+  width: 92%;
+  height: 30px;
+  outline: none;
+  border-radius: 10px;
+  padding: 8px 12px;
 }
 
-.purchase{
-    width: 100px;
-    height: 40px;
-    border: 2px solid brown;
-    background-color: burlywood;
-    color: #f1f1f1;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 30px;
+.purchase {
+  width: 100px;
+  height: 40px;
+  border: 2px solid brown;
+  background-color: burlywood;
+  color: #f1f1f1;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 900px) {
@@ -255,4 +255,24 @@
     left: 0px;
     width: 90%;
   }
+}
+
+@media screen and (max-width: 730px) {
+  .cookBookForMain {
+    width: 90%;
+  }
+
+  .paymentDetailsMainCardInfoLast {
+    margin-top: 20px;
+  }
+}
+
+.MuiAutocomplete-hasPopupIcon.css-1wuilmg-MuiAutocomplete-root
+  .MuiOutlinedInput-root,
+.MuiAutocomplete-hasClearIcon.css-1wuilmg-MuiAutocomplete-root
+  .MuiOutlinedInput-root {
+  padding-right: 39px !important;
+  border: 2px solid !important;
+  width: 433px !important;
+  height: 48px !important;
 }

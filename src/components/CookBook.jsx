@@ -1,7 +1,7 @@
 import React from "react";
 import "./CookBook.css";
 import cookBook from "../assets/cookbook.jpg";
-import CookBookForm from "./CookBookForm"
+import CookBookForm from "./CookBookForm";
 const CookBook = () => {
   return (
     <div className="cookBookMain">
@@ -44,10 +44,9 @@ const CookBook = () => {
             <img src={cookBook} />
           </div>
         </div>
-
       </div>
 
-      <CookBookForm/>
+      <CookBookForm />
 
       {/*  */}
     </div>

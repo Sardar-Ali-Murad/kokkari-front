@@ -8,7 +8,6 @@ import DinnerList from "../assets/dinner.pdf";
 import WineList from "../assets/wine.pdf";
 import Img from "../assets/header.png";
 
-
 const SmalScreenNavbar = () => {
   let [ham, setHam] = React.useState(true);
 
@@ -41,7 +40,6 @@ const SmalScreenNavbar = () => {
         <div className="nav-front"></div>
         {/* <img src={Img} style={{height:"100px",width:"100px"}}/> */}
 
-
         <div className="navBtnsBigScreen"></div>
 
         <GiHamburgerMenu
@@ -61,27 +59,17 @@ const SmalScreenNavbar = () => {
         <nav>
           <ul>
             <li>
-              <Link
-                className=""
-                to="/"
-                onClick={() => setHam(true)}
-              >
+              <Link className="" to="/" onClick={() => setHam(true)}>
                 Home
               </Link>
             </li>
             <li>
-              <Link
-                to="/About"
-                onClick={() => setHam(true)}
-              >
+              <Link to="/About" onClick={() => setHam(true)}>
                 About
               </Link>
             </li>
             <li>
-              <Link
-                to="/cusine"
-                onClick={() => setHam(true)}
-              >
+              <Link to="/cusine" onClick={() => setHam(true)}>
                 Cousine
               </Link>
             </li>
@@ -90,29 +78,27 @@ const SmalScreenNavbar = () => {
                 to="/courses"
                 onClick={() => setHam(true)}
               > */}
-              <a>
-                Menu
-              </a>
+              <a>Menu</a>
               {/* </Link> */}
               <div className="smallScreenNavMenus">
-                <p className="lunchSmall" onClick={lunch}>Lunch Menu</p>
-                <p className="dinnerSmall" onClick={dinner}>Dinner Menu</p>
-                <p className="wineSmall" onClick={wine}>Wine List</p>
+                <p className="lunchSmall" onClick={lunch}>
+                  Lunch Menu
+                </p>
+                <p className="dinnerSmall" onClick={dinner}>
+                  Dinner Menu
+                </p>
+                <p className="wineSmall" onClick={wine}>
+                  Wine List
+                </p>
               </div>
             </li>
             <li>
-              <Link
-                to="/Reservations"
-                onClick={() => setHam(true)}
-              >
+              <Link to="/Reservations" onClick={() => setHam(true)}>
                 Reservation
               </Link>
             </li>
             <li>
-              <Link
-                to="/Dining"
-                onClick={() => setHam(true)}
-              >
+              <Link to="/Dining" onClick={() => setHam(true)}>
                 Private Dining
               </Link>
             </li>

@@ -23,9 +23,12 @@
   background-color: black;
 }
 
-
-.reservationMain h1,h2,h3,h4,h5{
-  color: #36454F;
+.reservationMain h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #36454f;
 }
 
 .reservationContent {

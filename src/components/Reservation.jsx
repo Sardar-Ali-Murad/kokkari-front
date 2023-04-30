@@ -12,8 +12,8 @@ const Reservation = () => {
     <div className="reservationMain">
       {/*  */}
 
-          <h1 style={{marginBottom:"40px"}}>Reservations</h1>
-          {/* <h1 className="fancy-link">Reservations</h1> */}
+      <h1 style={{ marginBottom: "40px" }}>Reservations</h1>
+      {/* <h1 className="fancy-link">Reservations</h1> */}
       <div className="reservationPart1">
         <div className="reservationContent">
           {/* <h1 className="fancy-link">Reservations</h1> */}

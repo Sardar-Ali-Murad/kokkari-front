@@ -1,50 +1,62 @@
-.cookBookMain{
-    width: 80%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    padding: 100px 0px;
+.cookBookMain {
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 100px 0px;
 }
 
-.cookBookHeaders{
-    letter-spacing: 6px;
-    font-weight: lighter;
+.cookBookHeaders {
+  letter-spacing: 6px;
+  font-weight: lighter;
 }
 
-.cookBookPara p{
+.cookBookPara p {
   letter-spacing: 6px;
 }
 
-.cookBookContent{
-    padding-top: 70px;
+.cookBookContent {
+  padding-top: 70px;
 }
 
-.cookBookFlex{
-    display: flex;
-    gap: 30px;
+.cookBookFlex {
+  display: flex;
+  gap: 30px;
 }
 
-.cookBookPara{
-    margin-bottom: 40px;
+.cookBookPara {
+  margin-bottom: 40px;
 }
 
-.cookBookFlexContent{
-    display: flex;
+.cookBookFlexContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.cookBookFlexParas {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.cookBookImage img {
+  width: 100%;
+}
+
+.cookBookFlexContent {
+  flex: 2;
+}
+
+.cookBookImage {
+  flex: 1;
+}
+
+.cookBookImage img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1100px) {
+  .cookBookFlex {
     flex-direction: column;
-    gap: 30px;
-}
-
-.cookBookFlexParas{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.cookBookImage img{
-    width: 100%;
-}
-
-@media screen and (max-width:1100px){
-    .cookBookFlex{
-        flex-direction: column;
-    }
+  }
 }

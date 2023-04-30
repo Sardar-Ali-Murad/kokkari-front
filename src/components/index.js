@@ -7,4 +7,14 @@ import About from "./About";
 import Dining from "./Dining";
 import Press from "./Press";
 import CookBook from "./CookBook";
-export { Header, Home, Footer, Cusine, Reservation ,About,Dining,Press,CookBook};
+export {
+  Header,
+  Home,
+  Footer,
+  Cusine,
+  Reservation,
+  About,
+  Dining,
+  Press,
+  CookBook,
+};

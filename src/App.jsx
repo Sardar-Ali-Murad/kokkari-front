@@ -1,9 +1,19 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home, Header, Footer, Cusine, Reservation ,About,Dining,Press,CookBook} from "./components/index";
+import {
+  Home,
+  Header,
+  Footer,
+  Cusine,
+  Reservation,
+  About,
+  Dining,
+  Press,
+  CookBook,
+} from "./components/index";
 const App = () => {
-  let [active,setActive]=React.useState("")
+  let [active, setActive] = React.useState("");
   return (
     <div className="appMain">
       <BrowserRouter>
