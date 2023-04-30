@@ -106,43 +106,49 @@ const southBay = [
 let chips=[
   {
     role:"Managing Partner",
-    names:["Paul Kirby"]
+    names:[{
+      name:"Paul Kirby",
+      email:false
+    }]
   },
   {
     role:"Chef/Partner",
-    names:["Erik Cosselmon"]
+    names:[{
+      name:"Erik Cosselmon",
+      email:true
+    }]
   },
   {
     role:"General Manager",
-    names:["William Boumier"]
+    names:[{name:"William Boumier",email:true}]
   },
   {
     role:"Chef de Cuisine ",
-    names:["Manuel Vera"]
+    names:[{name:"Manuel Vera",email:false}]
   },
   {
     role:"Office Manager ",
-    names:["Molly Barrango"]
+    names:[{name:"Molly Barrango",email:false}]
   },
   {
     role:"Sous Chefs",
-    names:["Brian Beach"," Miho Reis"]
+    names:[{name:"Brian Beach",email:false},{name:'Miho Reis',email:false}]
   },
   {
     role:"Pastry",
-    names:["Guillermo Coronado"]
+    names:[{name:"Guillermo Coronado",email:true}]
   },
   {
     role:"Managers",
-    names:["Bibi Bahador"," Iain Bates"," Michele DiRuocco","Robin Kirby"," Valerie Klein"]
+    names:[{name:"Bibi Bahador",email:true},{name:"Sous Chefs",email:false},{name:"Michele DiRuocco",email:false},{name:"Robin Kirby",email:false},{name:" Valerie Klein",email:false}]
   },
   {
     role:"Wine Buyer ",
-    names:["Lyle Coffield"]
+    names:[{name:"Lyle Coffield",email:true}]
   },
   {
     role:"Event Manager",
-    names:["Melissa Lopez"]
+    names:[{name:"Melissa Lopez",email:false}]
   },
 
 ]

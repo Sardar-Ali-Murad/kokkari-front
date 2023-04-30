@@ -1,0 +1,410 @@
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 30px;
+    /* padding: 0px 100px; */
+    align-items: center;
+  }
+  
+  
+  /* The Big Screen Navbar */
+  .nav {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+  }
+  .nav-front h2 {
+    letter-spacing: 10px;
+  }
+  
+  .nav-main nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-main nav ul li a {
+    font-size: 16px;
+    /* color: #555555; */
+    cursor: pointer;
+    /* font-family: "Nunito", sans-serif; */
+    font-weight: 500;
+    line-height: 32px;
+  }
+  
+  .nav-main nav ul li a:hover {
+    scale: 1.1;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  /* The navBtns */
+  .navBtnsBigScreen {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .navBtnsSmallScreen {
+    display: flex;
+    align-items: center;
+    display: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .navBtnsSmallScreen .signUp {
+    margin-left: 20px;
+  }
+  
+  .login {
+    height: 35px;
+    width: 90px;
+    border-radius: 20px;
+    background-color: black;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+  }
+  
+  .signUp {
+    border: 1px solid #0065fd;
+    height: 35px;
+    width: 90px;
+    border-radius: 20px;
+    color: #ffffff;
+    background-image: linear-gradient(#02cb46, #56638b);
+    cursor: pointer;
+  }
+  
+  /* Small Screen nav starts */
+  .smal-screen-nav nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .big-screen-nav ul li a {
+    /* color: #555555; */
+    /* font-family: "Nunito", sans-serif; */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .big-screen-nav ul li a:hover {
+    color: #0065fd;
+  }
+  
+  .smal-screen-nav {
+    position: fixed;
+    background: red;
+    right: 0;
+    width: 297px;
+    z-index: 30;
+    /* background: rgba(0, 0, 0, 0.4); */
+    background-color: #8B4513;
+
+    backdrop-filter: blur(5px);
+    top: 0;
+    height: 100vh;
+    bottom: 0;
+    transform: translateX(350px);
+    transition: 1s ease-in-out;
+    display: none;
+    /* Just Temp */
+    /* overflow-y: scroll; */
+  }
+  
+  .small-screen-nav-active {
+    transform: translateX(0px);
+  }
+  
+  .smal-screen-nav nav ul li a {
+    color: #ffffff;
+    font-size: 23px;
+    /* font-family: "Nunito", sans-serif; */
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .smal-screen-nav nav ul li a:hover {
+    /* color: #0065fd; */
+    font-size: 23px;
+  }
+  
+  .smal-screen-nav nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .smal-screen-nav nav {
+    padding: 0px 30px;
+    margin-top: 150px;
+  }
+  
+  .small-screen-close {
+    font-size: 41px;
+    position: absolute;
+    right: 37px;
+    top: 32px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .ham {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+  }
+  
+  .navBarLogo {
+    height: 40px;
+    width: 150px;
+  }
+  
+  .signUp {
+    background-color: #0065fd;
+  }
+  
+  .ham {
+    color: white;
+  }
+  
+  .bigScreenNavWriter {
+    background: #ffffff;
+    /* box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15); */
+    background-color: #8B4513;
+  }
+  
+  /* .fancy-link {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .fancy-link:hover {
+    scale: 1.1;
+  }
+  
+  .fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 10;
+    width: 100%;
+    height: 2px;
+    background-color: #0065fd;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+    margin-top: 20px;
+  }
+  
+  .fancy-link:hover::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+  } */
+  
+  @media screen and (max-width: 1200px) {
+    .big-screen-nav {
+      display: none;
+    }
+    .ham {
+      display: block;
+    }
+    .smal-screen-nav {
+      display: block;
+    }
+    .navBtnsBigScreen {
+      display: none;
+    }
+    .navBtnsSmallScreen {
+      display: block;
+      gap: 20px;
+    }
+  }
+  
+  /* .fancyDectoration {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .fancyDectorationTrading {
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+  } */
+  
+  /* .fancy-link:hover {
+      scale: 1.1;
+    } */
+  
+  /* .fancyDectoration::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 10;
+    width: 100%;
+    height: 2px;
+    background-color: #0065fd;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+    margin-top: 20px;
+  }
+  
+  .fancyDectoration::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    width: 40%;
+  } */
+  
+  /* .fancyDectorationTrading::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 10;
+    width: 100%;
+    height: 2px;
+    background-color: #0065fd;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    transition: -webkit-transform 250ms ease-in;
+    transition: transform 250ms ease-in;
+    transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+    margin-top: 20px;
+  }
+   */
+  /* .fancyDectorationTrading::after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    width: 4%;
+  } */
+  
+  /* The New CSS FOR THE WRITER */
+  .bigScreenNavWriter nav ul li a {
+    color: #555555;
+  }
+  
+  .bigScreenNavWriter {
+    background: #ffffff;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hamWriter {
+    color: black;
+  }
+  
+  .getStartedWriter {
+    background-color: #ffffff;
+    height: 40px;
+    width: 110px;
+    border-radius: 14px;
+    color: #555555;
+    border: 1px solid #555555;
+  }
+  
+  .writerPerson {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: 2px solid #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navBtnsSmallScreenWriter {
+    display: flex;
+  }
+  
+  .smal-screen-nav nav ul li a {
+    color: #fcfcfc;
+  }
+  
+  .nav-main nav ul {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .darkNav {
+    background-color: #000000;
+    /* background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%); */
+    background-color: #8B4513;
+  }
+  .darkNavNavbar ul li a {
+    color: #faf9f6;
+  }
+  
+  .commonBtn {
+    background: linear-gradient(180deg, #2e6073 0%, #214b5a 100%);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    height: 40px;
+    width: 90px;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    color: #ffffff;
+    /* font-family: "Nunito", sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .smal-screen-nav nav {
+    margin-top: 90px;
+  }
+  
+
+  .smallScreenNavMenus{
+    position: relative;
+    left: 70px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #ffffff;
+  }
+
+  .smallScreenNavMenus p{
+    cursor: pointer;
+  }
+
+  .lunchSmall::before{
+    content: "1-";
+    position: relative;
+    right: 20px;
+  }
+  .dinnerSmall::before{
+    content: "2-";
+    position: relative;
+    right: 20px;
+  }
+  .wineSmall::before{
+    content: "3-";
+    position: relative;
+    right: 20px;
+  }

@@ -3,10 +3,11 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Home, Header, Footer, Cusine, Reservation ,About,Dining,Press,CookBook} from "./components/index";
 const App = () => {
+  let [active,setActive]=React.useState("")
   return (
     <div className="appMain">
       <BrowserRouter>
-        <Header />
+        <Header active={active} setActive={setActive} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/cusine" element={<Cusine />} />
@@ -16,7 +17,7 @@ const App = () => {
           <Route path="/Press" element={<Press />} />
           <Route path="/CookBook" element={<CookBook />} />
         </Routes>
-        <Footer />
+        <Footer setActive={setActive} />
       </BrowserRouter>
     </div>
   );

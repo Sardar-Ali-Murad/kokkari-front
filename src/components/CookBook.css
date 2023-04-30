@@ -39,6 +39,10 @@
     gap: 40px;
 }
 
+.cookBookImage img{
+    width: 100%;
+}
+
 @media screen and (max-width:1100px){
     .cookBookFlex{
         flex-direction: column;

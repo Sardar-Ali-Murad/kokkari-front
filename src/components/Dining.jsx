@@ -53,7 +53,7 @@ const Dining = () => {
             <p>
               <AiOutlineMail  className="diningIcon"/>
             </p>
-            <p>events@kokkari.com</p>
+            <p>email@gmail.com</p>
           </div>
         </div>
         <div className="diningFlexLast">

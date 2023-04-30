@@ -2,21 +2,21 @@ import React from "react";
 import "./Footer.css";
 import {Link} from "react-router-dom"
 
-const Footer = () => {
+const Footer = ({setActive}) => {
   return (
     <div>
       <div className="footerMain">
         {/* The First Links  */}
         <div className="footerLinks">
           <Link to="Press">
-            <p>PRESS ROOM</p>
+            <p className="activeLink" onClick={()=>setActive("")}>PRESS ROOM</p>
           </Link>
           <Link to="CookBook">
-          <p className="footerLinkAlignCenter">
+          <p className="footerLinkAlignCenter activeLink" onClick={()=>setActive("")}>
             GIFT CERTIFICATES <br /> & COOKBOOK{" "}
           </p>
           </Link>
-          <p>CONTACT</p>
+          <p className="activeLink">CONTACT</p>
         </div>
         {/* The First Links  */}
 
@@ -24,19 +24,27 @@ const Footer = () => {
         <div className="footerSubLinksBigMain">
           <div className="footerSubLinks">
             <div className="footerLinks1">
-              <p>KOKKARI </p>
+              <Link to="/">
+               <p className="activeLink" onClick={()=>setActive("")}>KOKKARI </p>
+              </Link>
               <p> | </p>
-              <p>EVVIA</p>
+              <Link to="/">
+                <p className="activeLink" onClick={()=>setActive("")}>EVVIA</p>
+              </Link>
             </div>
             <div className="footerSubLinksFlex">
               <p> KOKKARI ESTIATORIO</p>
               <p>200 Jackson Street (at Front St.)</p>
               <p>San Francisco, CA 94111</p>
-              <p>p: 415.981.0983</p>
+              <p>p: <span className="activeLink">415.981.0983</span></p>
             </div>
             <div className="footerSubLinksFlex">
-              <p>reservations & hours</p>
-              <p>directions</p>
+              <Link to="/Reservations">
+                <p  className="activeLink" onClick={()=>setActive("")} >reservations & hours</p>
+              </Link>
+              <Link to="/Reservations">
+                <p  className="activeLink" onClick={()=>setActive("")} >directions</p>
+              </Link>
             </div>
           </div>
         </div>
@@ -44,8 +52,8 @@ const Footer = () => {
       </div>
       {/* The Last Footer */}
       <div className="footerLast">
-        <p>© 2015-2023 Kokkari </p>
-        <p> Photos by Sara Remington | Site by TenayaPartners </p>
+        <p>© 2023- Merry Smith </p>
+        <p> Photos by Merry Smith | Site by ZollaProduction </p>
       </div>
       {/* The Last Footer */}
     </div>
