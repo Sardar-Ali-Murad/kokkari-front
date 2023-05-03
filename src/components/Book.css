@@ -1,0 +1,94 @@
+.textField{
+    outline: none;
+    border: 0px 0px 0px 0px;
+    background-color: rgba(221, 191, 155, 0.85);
+    height: 50px;
+    padding: 0px 20px;   
+}
+
+
+.bookMain{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 30px;
+}
+
+.bookTextFields{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.reservationPara{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
+.reservationPara p{
+    font-size: 16px;
+}
+
+.bookLine{
+    height: 1px;
+    width: 100%;
+    background-color: brown;
+}
+
+.bookContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bookTextFields{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bookBtn{
+    height: 60px;
+    width: 150px;
+    border: 2px solid brown;
+    cursor: pointer;
+    background-color: rgba(221, 191, 155, 0.85);
+    /* background-color: #f1f1f1; */
+}
+
+.bookMain{
+    margin-top: 80px;
+}
+
+
+.bookImage{
+    flex: 1;
+}
+
+.bookContent{
+    flex: 1;
+}
+
+.bookImage img{
+    width: 100%;
+}
+
+.react-time-picker__wrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 0;
+    border: thin solid gray;
+    width: 109%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    left: -24px;
+  }
+
+@media screen and (max-width:1000px) {
+    .bookMain{
+        flex-direction: column;
+    }
+}

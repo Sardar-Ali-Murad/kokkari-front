@@ -24,7 +24,9 @@ const Footer = ({ setActive }) => {
               GIFT CERTIFICATES <br /> & COOKBOOK{" "}
             </p>
           </Link>
-          <p className="activeLink">CONTACT</p>
+          <Link to="/Contact">
+             <p className="activeLink">CONTACT</p>
+          </Link>
         </div>
         {/* The First Links  */}
 
@@ -53,9 +55,10 @@ const Footer = ({ setActive }) => {
               </p>
             </div>
             <div className="footerSubLinksFlex">
-              <Link to="/Reservations">
+              <Link to="/Book">
                 <p className="activeLink" onClick={() => setActive("")}>
-                  reservations & hours
+                  {/* reservations & hours */}
+                  Book A Table
                 </p>
               </Link>
               <Link to="/Reservations">

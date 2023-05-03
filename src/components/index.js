@@ -7,6 +7,8 @@ import About from "./About";
 import Dining from "./Dining";
 import Press from "./Press";
 import CookBook from "./CookBook";
+import Contact from "./ContactUs"
+import Book from "./Book";
 export {
   Header,
   Home,
@@ -17,4 +19,6 @@ export {
   Dining,
   Press,
   CookBook,
+  Contact,
+  Book
 };
