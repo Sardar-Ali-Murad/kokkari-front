@@ -24,8 +24,8 @@ const ContactUs = () => {
     });
   }
 
-  // let url="https://merry-resturant-back.vercel.app"
-  let url="http://localhost:5000"
+  let url="https://merry-resturant-back.vercel.app"
+  // let url="http://localhost:5000"
 
   const contact = async () => {
     try {
