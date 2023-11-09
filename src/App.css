@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito:wght@300&family=Open+Sans:wght@500&family=Poppins:wght@200&family=Roboto&family=Source+Serif+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=PT+Sans&family=Quicksand&family=Roboto:wght@300;400&family=Tilt+Neon&display=swap');
 .appMain {
   background-color: rgba(221, 191, 155, 0.85);
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Tilt Neon', sans-serif !important;
+  /* font-family: "Roboto", sans-serif; */
   letter-spacing: 2px;
+  font-size: 14px !important;
 }
 
 h1,
@@ -14,7 +17,8 @@ h3,
 h4,
 h5,
 a {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Tilt Neon', sans-serif !important;
+  /* font-family: "Roboto", sans-serif; */
 }
 
 .appMain {

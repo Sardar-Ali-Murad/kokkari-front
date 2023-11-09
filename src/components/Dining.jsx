@@ -47,13 +47,13 @@ const Dining = () => {
             <p>
               <BsPhone className="diningIcon" />
             </p>
-            <p>415.981.0983</p>
+            <p>(555) 555-1234</p>
           </div>
           <div className="diningFlexLast">
             <p>
               <AiOutlineMail className="diningIcon" />
             </p>
-            <p>email@gmail.com</p>
+            <p>merryla@gmail.com</p>
           </div>
         </div>
         <div className="diningFlexLast">

@@ -5,6 +5,9 @@ import ScrollToTop from "react-scroll-to-top";
 // or
 
 const Footer = ({ setActive }) => {
+  function newTab(link){
+    window.open(link,"_blank")
+  }
   return (
     <div>
       <ScrollToTop smooth />
@@ -25,7 +28,7 @@ const Footer = ({ setActive }) => {
             </p>
           </Link>
           <Link to="/Contact">
-             <p className="activeLink">CONTACT</p>
+            <p className="activeLink">CONTACT</p>
           </Link>
         </div>
         {/* The First Links  */}
@@ -74,7 +77,9 @@ const Footer = ({ setActive }) => {
       {/* The Last Footer */}
       <div className="footerLast">
         <p>© 2023- Merry Smith </p>
-        <p> Photos by Merry Smith | Site by ZollaProduction </p>
+        <p>
+          Photos by Merry Smith | Site by <span className="footerLink" onClick={()=>newTab("https://web.facebook.com/sardar.ali.muradd")}>Sardar Ali Murad </span>
+        </p>
       </div>
       {/* The Last Footer */}
     </div>
